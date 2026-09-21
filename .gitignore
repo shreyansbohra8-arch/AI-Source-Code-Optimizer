@@ -1,0 +1,61 @@
+# ---------- Environment / secrets ----------
+.env
+backend/.env
+*.env.local
+
+# ---------- Python / backend ----------
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+venv/
+.venv/
+env/
+backend/data/reports/*.json
+
+# ---------- Node / frontend ----------
+node_modules/
+frontend/dist/
+frontend/build/
+.vite/
+*.local
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ---------- Compiler / execution artifacts ----------
+*.o
+*.obj
+*.out
+*.exe
+*.exp
+*.lib
+*.pdb
+*.gch
+cppopt_*/
+/tmp/cppopt_*
+
+# ---------- Benchmark / temp artifacts ----------
+*.bench.json
+*.tmp
+
+# ---------- OS files ----------
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# ---------- IDE files ----------
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ---------- Keep these (explicit allow-list reminders, not ignore rules) ----------
+!examples/*.cpp
+!docs/*.md
+!backend/tests/*.py
+!.env.example
+frontend/tsconfig.tsbuildinfo
