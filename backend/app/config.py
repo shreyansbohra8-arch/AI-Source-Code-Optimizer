@@ -27,7 +27,7 @@ class Settings(BaseSettings):
     execution_timeout_seconds: int = 5
     max_source_size_bytes: int = 200_000
     max_stdin_size_bytes: int = 50_000
-    benchmark_runs: int = 5
+    benchmark_runs: int = 7
 
     # --- Server configuration -----------------------------------------------
     backend_host: str = "127.0.0.1"
